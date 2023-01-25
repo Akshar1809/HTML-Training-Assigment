@@ -1,0 +1,96 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+}
+
+#divHero {
+    width: 30%;
+    height: 20%;
+    float: left;
+    margin: 10% 10%;
+}
+
+#imgHero {
+    box-shadow: 0% 40% 10% #0000000A;
+    border: 20px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+
+#divContent {
+    float: left;
+    margin-left: 5%;
+}
+
+#divLogo {
+    width: 55%;
+    height: 100%;
+    margin-top: 50%;
+    float: left;
+}
+
+#lblheading {
+    width: 200%;
+    height: 100%;
+    color: #3E3E3E;
+    opacity: 1;
+    font: normal normal 300 40px/47px Roboto;
+}
+
+b {
+    color: #C8242F;
+}
+
+#lblLogin {
+    width: 100%;
+    height: 33px;
+    font: normal normal normal 25px/33px Roboto;
+    color: #3E3E3E;
+    margin-top: -7%;
+}
+
+#txtusername,
+#txtpassword {
+    width: 150%;
+    height: 100%;
+    border: 1px solid #ADADAD;
+    border-radius: 5%;
+    margin-bottom: 10%;
+    padding: 5%;
+}
+
+#divBtn {
+    width: 200%;
+    height: 200%;
+}
+
+#btnLogin {
+    width: 138px;
+height: 45px;
+    background: #C8242F  no-repeat padding-box;
+    border-radius: 23px;
+    border-color: #FAFAFA;
+    color: #FAFAFA;
+    font-weight: bolder;
+}
+
+#forgotpassword {
+    width: 50%;
+    height: 30%;
+    margin-left: 25%;
+    font: normal normal normal 100%/150% Roboto;
+    color: #ADADAD;
+}
+
+#divRegisterHere {
+    width: 100%;
+    height: 20px;
+    margin-top: 5%;
+    font: normal normal normal 15px/20px Roboto;
+    color: #ADADAD;
+}
+
+#Register {
+    color: #C8242F;
+}
