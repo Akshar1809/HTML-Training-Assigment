@@ -1,0 +1,124 @@
+#imgMenu {
+    height: 40px;
+}
+
+#imgLogo {
+    height: 40px;
+}
+
+ul {
+    list-style: none;
+    padding-top: 40px;
+}
+
+.sidebar-icons {
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+}
+
+ul>li:hover {
+    background: #FFF3F4 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    font: normal normal normal 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #C8242F;
+}
+
+#imgSearchIcon{
+    height: 40px;
+}
+
+#txtSearch{
+    width: 650px;
+    border: none;
+}
+
+#analysis{
+    background-color: #fafafafa;
+    right: 0;
+}
+
+#analysis-div{
+    background-color: #ffffff;
+}
+
+.col1 {
+    margin-top: 20px;
+    /* margin-left: -100px; */
+}
+.column-content{
+    margin-bottom: 20px;
+}
+
+#column-two {
+    margin-top: 10px;
+}
+
+#upload-btn {
+    width: 124px;
+    height: 36px;
+    border: 1px solid #C8242F;
+    border-radius: 18px;
+}
+
+#upload-img {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+#upload-name {
+    margin-left: 50px;
+    margin-top: -27px;
+    color: #C8242F;
+}
+
+#file_item_status {
+    font: normal normal normal 12px/16px Roboto;
+    letter-spacing: 0px;
+    color: #ADADAD;
+}
+
+.btn {
+    width: 600px;
+    /* margin-left: -100px; */
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.snackbar_img {
+    width: 30px;
+    height: 30px;
+    /* margin-left: -320px; */
+
+}
+
+.btn1 {
+    width: 124px;
+    height: 45px;
+    /* margin-left: -100px; */
+    border-radius: 23px;
+}
+
+.pagination {
+    /* margin-left: -100px; */
+}
+
+.page-item {
+    width: 70px;
+    height: 20px;
+    font: normal normal normal 15px/20px Roboto;
+    color: #ADADAD;
+    text-align: center;
+    border-bottom-style: solid;
+    border-bottom-color: #ADADAD;
+    border-bottom-width: 2px;
+}
+
+.col-lorem {
+    width: 1119px;
+    height: 68px;
+    /* margin-left: -100px; */
+    font: normal normal normal 15px/24px Roboto;
+    color: #3E3E3E;
+} 

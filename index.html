@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,30 +10,31 @@
 </head>
 
 <body>
+    <div class="main-index">
+        <div id="divHero">
+            <img id="imgHero" src="images\hero-image.png">
+        </div>
+        <div id="divContent">
+            <div id="divLogo">
+                <img src="images\logo.svg">
 
-    <div id="divHero">
-        <img id="imgHero" src="images\hero-image.png">
-    </div>
-    <div id="divContent">
-        <div id="divLogo">
-            <img src="images\logo.svg">
+                <p id="lblheading"> We are <b>experts</b> in business,<br> marketing, growth, & sales.</p>
 
-            <p id="lblheading"> We are <b>experts</b> in business,<br> marketing, growth, & sales.</p>
+                <p id="lblLogin">Login into your account</p>
 
-            <p id="lblLogin">Login into your account</p>
-
-            <form action="dashboard.html" target="_blank">
-                <div id="divTextFields">
-                    <input type="text" placeholder="Username" id="txtusername">
-                    <input type="password" placeholder="Password" id="txtpassword">
+                <form action="dashboard.html" target="_blank">
+                    <div id="divTextFields">
+                        <input type="text" placeholder="Username" id="txtusername">
+                        <input type="password" placeholder="Password" id="txtpassword">
+                    </div>
+                    <div id="divBtn">
+                        <input type="submit" value="Login" id="btnLogin" formtarget="dashboard.html" />
+                        <a href="" id="forgotpassword">Forgot Password?</a>
+                    </div>
+                </form>
+                <div id="divRegisterHere">
+                    Are you a new Member?<a href="" id="Register">Register Here</a>
                 </div>
-                <div id="divBtn">
-                    <input type="submit" value="Login" id="btnLogin" formtarget="dashboard.html" />
-                    <a href="" id="forgotpassword">Forgot Password?</a>
-                </div>
-            </form>
-            <div id="divRegisterHere">
-                Are you a new Member?<a href="" id="Register">Register Here</a>
             </div>
         </div>
     </div>
