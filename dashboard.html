@@ -12,23 +12,42 @@
 </head>
 
 <body>
-    <header id="divHeader">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <img src="images\menu-bar.svg" id="imgMenu">
         <img src="images\logo.svg" id="imgLogo">
-        <img src="images\search-icon.svg" id="imgSearchIcon">
-        <input type="search" placeholder="Search" id="txtSearch">
-        <img src="images\notification-icon.svg" id="imgNotification">
-        <img src="images\profile.png" id="imgAvatar">
-        <label id="txtProfileName">John Doe </label>
-        <img src="images\downward-arrow.svg" id="imgDownwardArrow">
-
-    </header>
-
-
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ">
+            <li class="nav-item ">
+                <img src="images\search-icon.svg" id="imgSearchIcon">
+            </li>
+            <li class="nav-item">
+                <input type="search" placeholder="Search" id="txtSearch">
+            </li>
+            <li class="nav-item ">
+              <img src="images\notification-icon.svg" id="imgNotification">
+            </li>
+            <li class="nav-item">
+                <img src="images\profile.png" id="imgAvatar">
+            </li>
+            <li class="nav-item">
+                <label id="txtProfileName">John Doe </label>
+            </li>
+            <li class="nav-item">
+                <img src="images\downward-arrow.svg" id="imgDownwardArrow">
+            </li>
+          </ul>
+          
+        </div>
+      </nav>
+      
     <div id="sidebar">
         <div class="SidebarItems">
             <img src="images\dashboard-active.svg" class="items">
-            <span>Dashboard</span>
+            <span style="color: #C8242F;">Dashboard</span>
         </div>
         <div class="SidebarItems">
             <a href="innerpage.html" style="text-decoration-line:none;color:black">
@@ -58,34 +77,35 @@
     </div>
     <div id="dashboard">
         <h2 style="margin-bottom: 50px;">Dashboard</h2>
-
-        <div class="productitem">
-            <img src="images\star.svg" class="productimg">
-            <h3 class="productsquantity">23,456</h3>
-            <h4 class="productdesc">New Products</h4>
+        <div class="container">
+            <div class="row row1">
+                <div class="col-md-2 productitem">
+                    <img src="images\star.svg" class="productimg">
+                    <h3 class="productsquantity">23,456</h3>
+                    <h4 class="productdesc">New Products</h4>
+                </div>
+                <div class="col-md-2 productitem">
+                    <img src="images\new-product.svg" class="productimg">
+                    <h3 class="productsquantity">2345</h3>
+                    <h4 class="productdesc">Added Products</h4>
+                </div>
+                <div class="col-md-2 productitem">
+                    <img src="images\total-product.svg" class="productimg">
+                    <h3 class="productsquantity">32,456</h3>
+                    <h4 class="productdesc">Total Products</h4>
+                </div>
+                <div class="col-md-2 productitem">
+                    <img src="images\dollar-filled.svg" class="productimg">
+                    <h3 class="productsquantity">5678</h3>
+                    <h4 class="productdesc">Today's Sales</h4>
+                </div>
+                <div class="col-md-2 productitem">
+                    <img src="images\money-bag.svg" class="productimg">
+                    <h3 class="productsquantity">33,5342</h3>
+                    <h4 class="productdesc">Total Sale</h4>
+                </div>
+            </div>
         </div>
-
-        <div class="productitem">
-            <img src="images\new-product.svg" class="productimg">
-            <h3 class="productsquantity">2345</h3>
-            <h4 class="productdesc">Added Products</h4>
-        </div>
-        <div class="productitem">
-            <img src="images\total-product.svg" class="productimg">
-            <h3 class="productsquantity">32,456</h3>
-            <h4 class="productdesc">Total Products</h4>
-        </div>
-        <div class="productitem">
-            <img src="images\dollar-filled.svg" class="productimg">
-            <h3 class="productsquantity">5678</h3>
-            <h4 class="productdesc">Today's Sales</h4>
-        </div>
-        <div class="productitem">
-            <img src="images\money-bag.svg" class="productimg">
-            <h3 class="productsquantity">33,5342</h3>
-            <h4 class="productdesc">Total Sale</h4>
-        </div>
-
 
         <div id="Salegraph">
             <h4 class="salegraph-heading">Sale</h4>
@@ -99,140 +119,145 @@
             <h4 class="salecountrygraph-heading">Sales By Country</h4>
             <img src="images\pie-chart.svg" id="piechart" alt="">
 
-            <div id="name-of-country">
-                <div class="leftside-country">
-                    <div id="usa"></div>
-                    <span class="leftcountry-names">United States of America</span>
-                </div>
-                <div class="rightside-country">
-                    <div id="canada"></div>
-                    <span class="rightcountry-names">Canada</span>
-                </div>
-            </div>
-            <br>
-            <div id="name-of-country1">
-                <div class="leftside-country">
-                    <div id="russia"></div>
-                    <span class="leftcountry-names">Russia</span>
-                </div>
-                <div class="rightside-country">
-                    <div id="india"></div>
-                    <span class="rightcountry-names">India</span>
-                </div>
+            <table id="country-table">
+                <tr>
+                    <td>
+                        <div id="usa"></div>
+                    </td>
+                    <td class="country-names">United States of America</td>
 
-            </div>
+                    <td>
+                        <div id="canada"></div>
+                    </td>
+                    <td class="country-names">Canada</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="russia"></div>
+                    </td>
+                    <td class="country-names">Russia</td>
+
+                    <td>
+                        <div id="india"></div>
+                    </td>
+                    <td class="country-names">India</td>
+                </tr>
+            </table>
+
         </div>
 
 
         <div class="invoice">
             <span id="invoice-title">Invoices</span>
             <span id="viewall">View All</span>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th class="table-heading" scope="col">INVOICE</th>
-                        <th class="table-heading" scope="col">COMPANY NAME</th>
-                        <th class="table-heading" scope="col">EMAIL</th>
-                        <th class="table-heading" scope="col">DUE DATE</th>
-                        <th class="table-heading" scope="col">STATUS</th>
-                        <th class="table-heading" scope="col">AMOUNT</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">651535</th>
-                        <td>Public Adjusting Firm</td>
-                        <td>georgia.young@example.com</td>
-                        <td>24 May,2020</td>
-                        <td>
-                            <div class="status">Paid</div>
-                        </td>
-                        <td>$47,800</td>
+            <div class="table-responsive">
+                <table class="table ">
+                    <thead>
+                        <tr>
+                            <th class="table-heading" scope="col">INVOICE</th>
+                            <th class="table-heading" scope="col">COMPANY NAME</th>
+                            <th class="table-heading" scope="col">EMAIL</th>
+                            <th class="table-heading" scope="col">DUE DATE</th>
+                            <th class="table-heading" scope="col">STATUS</th>
+                            <th class="table-heading" scope="col">AMOUNT</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">651535</th>
+                            <td>Public Adjusting Firm</td>
+                            <td>georgia.young@example.com</td>
+                            <td>24 May,2020</td>
+                            <td>
+                                <div class="status">Paid</div>
+                            </td>
+                            <td>$47,800</td>
 
-                    </tr>
-                    <tr>
-                        <th scope="row">558612</th>
-                        <td>other</td>
-                        <td>jessica.hanson@example.com</td>
-                        <td>24 May,2020</td>
-                        <td>
-                            <div class="status">Paid</div>
-                        </td>
-                        <td>$98,000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">558612</th>
-                        <td>Vendor</td>
-                        <td>alma.lawson@example.com</td>
-                        <td>8 Sep,2020</td>
-                        <td>
-                            <div class="status">Paid</div>
-                        </td>
-                        <td>$20,900</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">558612</th>
-                        <td>Propaerty Managment Company</td>
-                        <td>kenzi.lawson@example.com</td>
-                        <td>22 Oct,2020</td>
-                        <td>
-                            <div class="status">Paid</div>
-                        </td>
-                        <td>$10,570</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">651535</th>
-                        <td>Subcontractor Company</td>
-                        <td>jackson.graham@example.com</td>
-                        <td>1 Feb,2020</td>
-                        <td>
-                            <div class="statusf">Failed</div>
-                        </td>
-                        <td>$10,570</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">653518</th>
-                        <td>Mortgage Company</td>
-                        <td>felicia.reid@example.com</td>
-                        <td>22 Oct,2020</td>
-                        <td>
-                            <div class="statusp">Pending</div>
-                        </td>
-                        <td>$12,600</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">487441</th>
-                        <td>TPA</td>
-                        <td>dolores.chambers@example.com</td>
-                        <td>21 Sep,2020</td>
-                        <td>
-                            <div class="status">Paid</div>
-                        </td>
-                        <td>$11,170</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">267400</th>
-                        <td>Fire Department</td>
-                        <td>nevaeh.simmons@example.com</td>
-                        <td>17 Oct,2020</td>
-                        <td>
-                            <div class="statusf">Failed</div>
-                        </td>
-                        <td>$28,000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">449003</th>
-                        <td>Insurance Carries</td>
-                        <td>cutis.weaver@example.com</td>
-                        <td>21 Sep,2020</td>
-                        <td>
-                            <div class="status">Paid</div>
-                        </td>
-                        <td>$10,000</td>
-                    </tr>
+                        </tr>
+                        <tr>
+                            <th scope="row">558612</th>
+                            <td>other</td>
+                            <td>jessica.hanson@example.com</td>
+                            <td>24 May,2020</td>
+                            <td>
+                                <div class="status">Paid</div>
+                            </td>
+                            <td>$98,000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">558612</th>
+                            <td>Vendor</td>
+                            <td>alma.lawson@example.com</td>
+                            <td>8 Sep,2020</td>
+                            <td>
+                                <div class="status">Paid</div>
+                            </td>
+                            <td>$20,900</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">558612</th>
+                            <td>Propaerty Managment Company</td>
+                            <td>kenzi.lawson@example.com</td>
+                            <td>22 Oct,2020</td>
+                            <td>
+                                <div class="status">Paid</div>
+                            </td>
+                            <td>$10,570</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">651535</th>
+                            <td>Subcontractor Company</td>
+                            <td>jackson.graham@example.com</td>
+                            <td>1 Feb,2020</td>
+                            <td>
+                                <div class="statusf">Failed</div>
+                            </td>
+                            <td>$10,570</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">653518</th>
+                            <td>Mortgage Company</td>
+                            <td>felicia.reid@example.com</td>
+                            <td>22 Oct,2020</td>
+                            <td>
+                                <div class="statusp">Pending</div>
+                            </td>
+                            <td>$12,600</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">487441</th>
+                            <td>TPA</td>
+                            <td>dolores.chambers@example.com</td>
+                            <td>21 Sep,2020</td>
+                            <td>
+                                <div class="status">Paid</div>
+                            </td>
+                            <td>$11,170</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">267400</th>
+                            <td>Fire Department</td>
+                            <td>nevaeh.simmons@example.com</td>
+                            <td>17 Oct,2020</td>
+                            <td>
+                                <div class="statusf">Failed</div>
+                            </td>
+                            <td>$28,000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">449003</th>
+                            <td>Insurance Carries</td>
+                            <td>cutis.weaver@example.com</td>
+                            <td>21 Sep,2020</td>
+                            <td>
+                                <div class="status">Paid</div>
+                            </td>
+                            <td>$10,000</td>
+                        </tr>
 
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </body>
